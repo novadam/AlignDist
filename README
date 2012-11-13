@@ -36,4 +36,4 @@ java -jar adsample.jar -a=0.8 ref.fsa
 
 ### LICENSE ###
 
-AlignDist is distributed under the GNU General Public License Version 3. A copy of the license is found in LICENSE.txt.
+AlignDist is distributed under the GNU General Public License Version 3. A copy of the license is found in LICENSE.
