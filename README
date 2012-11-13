@@ -1,0 +1,40 @@
+
+AlignDist - hacking the alignment distance
+https://github.com/novadam/AlignDist
+ 
+ 
+### INTRODUCTION ###
+
+AlignDist is a collection of tools for working with alignment distances. Currently
+features the following two programs:
+
+AlignDistCalc is a program for mass-evaluation of test alignments against a reference. It supports standard FASTA files and StatAlign mpd/log files both as test and reference.
+
+AlignDistSample takes samples approximately uniformly from the set of alignments that are at a given distance from a reference alignment. It uses the Metropolis coupled MCMC (parallel tempering) technique to allow efficient sampling. Also features a temperature tuning mode where chain temperatures are automatically adjusted to meet the prescribed chain swap acceptance ratios.
+
+The alignment distance measure in use by these tools are defined in the paper:
+Schwartz et al. (2005) Alignment Metric Accuracy, arXiv:q-bio/0510052
+
+
+### USAGE ###
+
+To get help:
+
+java -jar adcalc.jar -h
+java -jar adsample.jar -h
+
+
+Example (typical) usage:
+
+1. AlignDistCalc
+
+java -jar adcalc.jar ref.fsa test1.fsa test2.fsa
+
+2. AlignDistSample
+
+java -jar adsample.jar -a=0.8 ref.fsa
+
+
+### LICENSE ###
+
+AlignDist is distributed under the GNU General Public License Version 3. A copy of the license is found in LICENSE.txt.
