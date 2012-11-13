@@ -5,8 +5,7 @@ https://github.com/novadam/AlignDist
  
 ### INTRODUCTION ###
 
-AlignDist is a collection of tools for working with alignment distances. Currently
-features the following two programs:
+AlignDist is a collection of tools for working with alignment distances. Currently features the following two programs:
 
 AlignDistCalc is a program for mass-evaluation of test alignments against a reference. It supports standard FASTA files and StatAlign mpd/log files both as test and reference.
 
